@@ -432,12 +432,14 @@ function keepLanguage2() {
       "resumeKnowledges8": "Deployment",
 
       "awardsTitle": "Awards",
+      "awardsDescription": "This page includes clickable links to the published articles. Additionally, certain certifications and challenges can also be accessed by clicking on them.",
       "awardsPapersTitles": "Papers + Certifications",
       "awardsPapersRoles": "Co-Author",
       "awardsChallengesAvignon": "Avignon University.",
       "awardsSupcom": "Sup'Com - Tunisia.",
 
       "portfolioAll": "All",
+      "portfolioInstructions": "To access specific project details, simply click on the image associated with the corresponding project. Stay tuned for additional projects coming soon, and make use of the filters to sort projects by category.",
       "portfolioCompanies": "Companies",
       "portfolioSoftware": "Software",
       "portfolioOpenS": "Open Source",
@@ -556,12 +558,14 @@ function keepLanguage2() {
       "resumeKnowledges8": "Déploiement",
 
       "awardsTitle": "Certifications",
+      "awardsDescription": "Les articles publiés sont des liens cliquables sur cette page. De plus, certaines certifications et défis peuvent également être consultés en les cliquant.",
       "awardsPapersTitles": "Article + Certifications",
       "awardsPapersRoles": "Co-auteur",
       "awardsChallengesAvignon": "Université D'Avignon.",
       "awardsSupcom": "Sup'Com - Tunisie.",
 
       "portfolioAll": "Tout",
+      "portfolioInstructions": "Pour voir les détails d'un projet spécifique, cliquez simplement sur l'image du projet correspondant. D'autres projets seront bientôt ajoutés. Vous pouvez également utiliser les filtres pour trier les projets par catégorie.",
       "portfolioCompanies": "Compagnies",
       "portfolioSoftware": "Logiciels",
       "portfolioOpenS": "Open Source",
