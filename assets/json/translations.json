@@ -1,381 +1,11 @@
-(function ($) {
-  "use strict";
-  // preloader start
-  let preloader = document.querySelector("#preloader");
-  window.addEventListener("load", function () {
-    preloader.classList.add("preloaded");
-    setTimeout(function () {
-      preloader.remove();
-    }, 1500);
-  });
-  // preloader end
-
-  // meanmenu start
-  $(".main_menu").meanmenu({
-    meanMenuContainer: ".mobile_menu",
-    meanScreenWidth: "1399",
-  });
-
-  $(".main_menu_2").meanmenu({
-    meanMenuContainer: ".mobile_menu_2",
-    meanScreenWidth: "991",
-  });
-
-  $(".main_menu_3").meanmenu({
-    meanMenuContainer: ".mobile_menu_3",
-    meanScreenWidth: "991",
-  });
-  // meanmenu end
-
-  // mobile menu start
-  let menutoggole = document.querySelector(".toggle_menu");
-  let mobilemenu = document.querySelector(".mobile-menu");
-  menutoggole.onclick = function () {
-    menutoggole.classList.toggle("active");
-    mobilemenu.classList.toggle("active");
-  };
-  // mobile menu end
-
-  // dark mood start
-  var darktoggle = document.querySelector(".dark-btn-icon");
-  var home1bgimg = document.querySelector(".page-wrapper");
-  var home2bgimg = document.querySelector(".page-wrapper-2");
-  
-
-  /**/ 
-  function applyTranslation(language) {
-    // Assuming translations is the parsed JSON of your translations
-    
-    document.querySelectorAll('[data-key]').forEach(function(element) {
-      var key = element.getAttribute('data-key');
-      if (translations[language] && translations[language][key]) {
-        element.innerHTML = translations[language][key];
-      }
-    });
-  }
-
-
-// Add Event Listener to the download button
-document.querySelector(".bostami-parsonal-info-btn a").addEventListener("click", function(e) {
-    e.preventDefault();
-
-    var span = this.querySelector("[data-key='infoDownloadCV']");
-    if(!span) return;  // If span not found, exit function
-    
-    var spanContent = span.textContent.trim();
-
-    // Define your logic for file selection
-    var filePath;
-    switch(spanContent) {
-        case "download CV EN":
-            filePath = "assets/pdf/CV Abdoulaye SAYOUTI SOULEYMANE EN.pdf";
-            break;
-        case "Télécharger CV FR":
-            filePath = "assets/pdf/CV Abdoulaye SAYOUTI SOULEYMANE FR.pdf";
-            break;
-        default:
-            alert("No CV available for download!");
-            return;
-    }
-
-    // Open the PDF file in a new window/tab
-    window.open(filePath, "_blank");
-});
-
-
-
-
-  // Function to toggle between English and French
-  function toggleLanguage() {
-    // Toggle the class on the body element
-    var languageImage = document.getElementById('language-image');
-
-    var stringArray = languageImage.src.split('/'); 
-    var imageName = stringArray[stringArray.length - 1];
-    var newLanguage;
-    
-    if (imageName === 'fr.png' || localStorage.getItem("language-flag") === "french") {
-        // Replace the image with fr.png
-        languageImage.src = languageImage.src.replace("fr","eng");
-        // Translate to French
-        applyTranslation("french");
-        newLanguage = "english";
-    } else {
-        // Replace the image with fr.png
-        languageImage.src = languageImage.src.replace("eng","fr");
-        // Translate to English
-        applyTranslation("english");
-        newLanguage = "french";
-        
-    }
-    localStorage.setItem("language-flag", newLanguage);
-    
-}
-
-
-  function toggleLanguage2() {
-    // Toggle the class on the body element
-    var paragraphs = document.querySelectorAll('.translatable');
-    var languageImage = document.getElementById('language-image');
-
-    var stringArray = languageImage.src.split('/'); 
-    var imageName = stringArray[stringArray.length - 1];
-    var newLanguage;
-    
-    if (imageName === 'fr.png' || localStorage.getItem("language-flag") === "french") {
-        // Replace the image with fr.png
-        languageImage.src = languageImage.src.replace("fr","eng");
-        // Translate to French
-        paragraphs.forEach(function (paragraph) {
-            if (paragraph.dataset.french) {
-                paragraph.textContent = paragraph.dataset.french;
-            }
-        });
-        newLanguage = "english";
-    } else {
-        // Replace the image with fr.png
-        languageImage.src = languageImage.src.replace("eng","fr");
-        // Translate to English
-        paragraphs.forEach(function (paragraph) {
-            if (paragraph.dataset.english) {
-                paragraph.textContent = paragraph.dataset.english;
-            }
-        });
-        newLanguage = "french";
-        
-    }
-    localStorage.setItem("language-flag", newLanguage);
-    
-}
-
-function keepLanguage() {
-  // Toggle the class on the body element
-  var paragraphs = document.querySelectorAll('.translatable');
-  var languageImage = document.getElementById('language-image');
-
-  var stringArray = languageImage.src.split('/'); 
-  var imageName = stringArray[stringArray.length - 1];
-  if (localStorage.getItem("language-flag") === "english") {
-    languageImage.src = languageImage.src.replace("fr","eng");
-      // Translate to French
-      applyTranslation("french");
-  
-  } else {
-      // Translate to English
-      applyTranslation("english");
-
-  }
-}
-
-
-function keepLanguage2() {
-  // Toggle the class on the body element
-  var paragraphs = document.querySelectorAll('.translatable');
-  var languageImage = document.getElementById('language-image');
-
-  var stringArray = languageImage.src.split('/'); 
-  var imageName = stringArray[stringArray.length - 1];
-  console.log("Image :")
-  console.log(localStorage.getItem("language-flag"))
-  if (localStorage.getItem("language-flag") === "english") {
-    languageImage.src = languageImage.src.replace("fr","eng");
-      // Translate to French
-      paragraphs.forEach(function (paragraph) {
-          if (paragraph.dataset.french) {
-              paragraph.textContent = paragraph.dataset.french;
-          }
-      });
-  
-  } else {
-      // Translate to English
-      paragraphs.forEach(function (paragraph) {
-          if (paragraph.dataset.english) {
-              paragraph.textContent = paragraph.dataset.english;
-          }
-      });
-
-  }
-}
-
-
-
-  // Function to toggle the dark theme
-  function toggleDarkTheme() {
-    // Toggle the class on the body element
-    $("body").toggleClass("dark-theme");
-
-    // Store the preference in local storage
-    const isDarkTheme = $("body").hasClass("dark-theme");
-    localStorage.setItem("darkTheme", isDarkTheme);
-
-    if (isDarkTheme) {
-      darktoggle.src = "assets/img/icon/sun-icon.png";
-      home1bgimg.style.backgroundImage =
-        "url('assets/img/bg/page-bg-dark-1.jpg')";
-    } else {
-      darktoggle.src = "assets/img/icon/mon-icon.png";
-      home1bgimg.style.backgroundImage = "url('assets/img/bg/page-bg-1.jpg')";
-      home2bgimg.style.backgroundImage = "url('assets/img/bg/page-bg-1.jpg')";
-    }
-  }
-  // Check if the user preference is already stored in local storage
-  $(document).ready(function () {
-    
-    const isDarkTheme = localStorage.getItem("darkTheme") === "true";
-    // Apply the dark theme if the preference is set to true
-    if (isDarkTheme) {
-      $("body").addClass("dark-theme");
-      darktoggle.src = "assets/img/icon/sun-icon.png";
-      home1bgimg.style.backgroundImage =
-        "url('assets/img/bg/page-bg-dark-1.jpg')";
-    }
-
-   
-    // Check for language preference
-    const preferredLanguage = localStorage.getItem("language-flag");
-    if (preferredLanguage) {
-      keepLanguage(); // This will handle toggling the language on page load
-    }
-
-    // Attach click event to the specified div
-    $(".dark-btn").on("click", toggleDarkTheme);
-    $(".lang-btn").on("click", toggleLanguage);
-  });
-  // dark mood end
-
-  //  client slider start
-  if (jQuery(".client_slide_active").length > 0) {
-    let acooterbrand = new Swiper(".client_slide_active", {
-      slidesPerView: 4,
-      loop: true,
-      rtl: false,
-      infinite: true,
-      autoplay: {
-        delay: 4000,
-      },
-
-      breakpoints: {
-        0: {
-          slidesPerView: 2,
-        },
-        480: {
-          slidesPerView: 2,
-        },
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        992: {
-          slidesPerView: 4,
-        },
-        1200: {
-          slidesPerView: 5,
-        },
-      },
-    });
-  }
-  // client slider end
-
-  // portfolio fillter start
-  function enableMasonry2() {
-    // ----------------------------- isotop gallery
-
-    $(window).on("load", function () {
-      if ($("#fillter-item-active").length) {
-        var $grid = $("#fillter-item-active").isotope({
-          // options
-          itemSelector: ".isotop-item",
-          percentPosition: true,
-          masonry: {
-            // use element for option
-            columnWidth: ".grid-sizer",
-          },
-        });
-
-        // filter items on button click
-        $(".isotop-menu-wrapper").on("click", "li", function () {
-          var filterValue = $(this).attr("data-filter");
-          $grid.isotope({ filter: filterValue });
-        });
-
-        // change is-checked class on buttons
-        $(".isotop-menu-wrapper").each(function (i, buttonGroup) {
-          var $buttonGroup = $(buttonGroup);
-          $buttonGroup.on("click", "li", function () {
-            $buttonGroup.find(".is-checked").removeClass("is-checked");
-            $(this).addClass("is-checked");
-          });
-        });
-      }
-    });
-  }
-
-  enableMasonry2();
-  // portfolio filter end
-
-  // blog slider start
-  if (jQuery(".blog-slider-active").length > 0) {
-    let acooterbrand = new Swiper(".blog-slider-active", {
-      slidesPerView: 1,
-      loop: true,
-      rtl: false,
-      infinite: true,
-      autoplay: false,
-      pagination: {
-        el: ".blog-progation",
-        clickable: true,
-      },
-    });
-  }
-  // blog slider end
-
-  // contact form
-  $(".input-box.name").click(function () {
-    $(".input-box.name").addClass("height");
-    $(".input-box.name").css("borderBottom", "1px solid #FE7878");
-    $(".input-lebel.name").css("color", "#FE7878");
-  });
-
-  $(".input-box.gmail").click(function () {
-    $(".input-box.gmail").addClass("height");
-    $(".input-box.gmail").css("borderBottom", "1px solid #1B74E4");
-    $(".input-lebel.gmail").css("color", "#1B74E4");
-  });
-
-  $(".input-box.message").click(function () {
-    $(".input-box.message").addClass("height");
-    $(".input-box.message").css("borderBottom", "1px solid #CE65F3");
-    $(".input-lebel.message").css("color", "#CE65F3");
-  });
-  // contact form end
-
-  // data background
-  $("[data-background]").each(function () {
-    $(this).css(
-      "background-image",
-      "url(" + $(this).attr("data-background") + ") "
-    );
-  });
-
-  //   odometer
-  $(".odometer").appear(function (e) {
-    var odo = $(".odometer");
-    odo.each(function () {
-      var countNumber = $(this).attr("data-count");
-      $(this).html(countNumber);
-    });
-  });
-
-  let translations = {
+{
     "english": {
       "aboutTitle": "About",
-      "aboutText1": "R&D AI Engineer with 3+ years of expertise in ML/DL models, LLMs, and 3D data processing. Specializing in NLP and Computer Vision, I develop AI solutions that enhance product quality and operational efficiency across industries including energy and dentistry. Proficient in the full AI development lifecycle, from data preprocessing to deployment. Bilingual (French/English) professional committed to leveraging AI for innovative problem-solving and continually exploring emerging technologies through personal projects.",
-      "aboutText2": "My goal is to harness the power of AI and software development to drive innovation and make a positive impact on businesses and society.",
+      "aboutText1": "As a passionate problem solver in the realm of real-world challenges, I have honed my expertise in Artificial Intelligence, Software Development, and Telecommunications. With over 2 years of experience as a driven AI engineer, I specialize in crafting NLP and Computer Vision models. My strong foundation in software development further enriches my skill set. I'm also deeply committed to staying abreast of emerging technologies and actively contribute to open-source projects.",
+      "aboutText2": "Solving complex problems and leveraging technology to make a positive impact is my driving force.",
       "aboutWhatIDo":"What I Do!",
       "aboutDSTitle":"Data Science",
-      "aboutDSDescription":"I specialize in Data Science, crafting and fine-tuning AI/ML/DL models specialy for Natural Language Processing, Large Language Models (LLMs) and Computer Vision.",
+      "aboutDSDescription":"I specialize in Data Science, crafting and fine-tuning AI/ML/DL models specialy for Natural Language Processing, Large Language Models and Computer Vision.",
       "aboutSDTitle": "Software Development",
       "aboutSDDescription": "I develop web, mobile, and desktop apps. I'm committed to delivering high-quality software, and ensuring efficient model deployments through MLOps.",
       "aboutOSTitle": "Open Source",
@@ -417,12 +47,9 @@ function keepLanguage2() {
       "resumeExperience4.3": " Tunis - Tunisia.",
 
       "resumeSkillsTitle": "Technical Skills",
-      "resumeSkills1": "Programming Languages",
-      "resumeSkills2": "Data Processing",
-      "resumeSkills3": "Natural Language Processing",
-      "resumeSkills4": "Databases",
-      "resumeSkills5": "Data Visualization",
-      "resumeSkills6": "Web Development",
+      "resumeSkills1": "Mathematics | Algorithms",
+      "resumeSkills2": "Software Development | Docker | Git | GitLab",
+      "resumeSkills3": "",
 
       "resumeKnowledgesTitle": "Knowledges",
       "resumeKnowledges1": "Open Source Projects",
@@ -483,8 +110,8 @@ function keepLanguage2() {
       "worksPersonalProject":  "Personal Project",
       "clickHere" : "Click here",
 
-      "contactText1" :"Let's connect and explore the possibilities in AI together! Whether you have exciting opportunities, thought-provoking questions, innovative collaboration ideas, or just want to geek out about the latest in AI, I'm all ears.",
-      "contactText2" :"Ready to chat? Drop me a message and let's start a conversation!",
+      "contactText1" :"Whether you have opportunities, questions to ask, collaboration ideas, or simply want to discuss the exciting world of AI, feel free to reach out.",
+      "contactText2" :"Send me a message.",
       "contactName" :"name *",
       "contactEmail" :"email *",
       "contactMessage" :"message *",
@@ -505,8 +132,8 @@ function keepLanguage2() {
     },
     "french": {
       "aboutTitle": "À propos",
-      "aboutText1": "Ingénieur R&D en IA avec plus de 3 ans d'expertise en modèles ML/DL, LLMs, et traitement de données 3D. Spécialisé dans le NLP et la vision par ordinateur, je développe des solutions d'IA qui améliorent la qualité des produits et l'efficacité opérationnelle dans des secteurs tels que l'énergie et la dentisterie. Je maîtrise l'ensemble du cycle de développement de l'IA, du prétraitement des données au déploiement. Bilingue (français/anglais), je m'engage à tirer parti de l'IA pour résoudre des problèmes de manière innovante et à explorer en permanence les technologies émergentes dans le cadre de projets personnels.",
-      "aboutText2": "Mon objectif est d'exploiter la puissance de l'IA et du développement de logiciels pour stimuler l'innovation et avoir un impact positif sur les entreprises et la société.",
+      "aboutText1": "Passionné par la résolution de problèmes monde réels, j'ai développé mon expertise dans les domaines de l'intelligence artificielle, du développement de logiciels et des télécommunications. Avec plus de deux ans d'expérience en tant qu'ingénieur en intelligence artificielle motivé, je me spécialise dans la création de modèles de Traitement automatique du langage naturel (NLP) et de vision par ordinateur. Je suis également très attaché à rester à la pointe des technologies émergentes et à contribuer activement à des projets open source.",
+      "aboutText2": "Résoudre des problèmes complexes et exploiter les technologies pour avoir un impact positif est ma force motrice.",
       "aboutWhatIDo":"Mes compétences !",
       "aboutDSTitle" : "Science des données",
       "aboutDSDescription" : "Je suis spécialisé dans la science des données, l'élaboration et la mise au point de modèles d'IA/ML/DL en particulier pour le traitement du langage naturel, les grands modèles de langage (LLMs) et la vision par ordinateur.",
@@ -551,12 +178,9 @@ function keepLanguage2() {
       "resumeExperience4.3": "Tunis - Tunisie.",
 
       "resumeSkillsTitle": "Compétences",
-      "resumeSkills1": "Langages de programmation",
-      "resumeSkills2": "Traitement des données",
-      "resumeSkills3": "Traitement Automatique du Langage",
-      "resumeSkills4": "Bases de données",
-      "resumeSkills5": "Visualisation des données",
-      "resumeSkills6": "Développement Web",
+      "resumeSkills1": "Mathématiques | Algorithmes",
+      "resumeSkills2": "Développement Logiciel | Docker | Git | GitLab",
+      "resumeSkills3": "",
 
       "resumeKnowledgesTitle": "Connaissances",
       "resumeKnowledges1": "Projets Open Source",
@@ -617,8 +241,8 @@ function keepLanguage2() {
       "worksPersonalProject":  "Projet Personnel",
       "clickHere" : "Cliquez ici",
 
-      "contactText1" :"Prenons contact et explorons ensemble les possibilités qu'offre l'IA ! Que vous ayez des opportunités passionnantes, des questions qui font réfléchir, des idées de collaboration innovantes ou que vous souhaitiez simplement vous informer sur les dernières nouveautés en matière d'IA, je suis à votre écoute.",
-      "contactText2" :"Prêt à discuter ? Envoyez-moi un message et entamons une conversation !",
+      "contactText1" :"Que vous ayez des opportunités, des questions à poser, des idées de collaboration ou que vous souhaitiez simplement discuter du monde passionnant de l'IA, n'hésitez pas à me contacter.",
+      "contactText2" :"Envoyez-moi un message.",
       "contactName" :"nom *",
       "contactEmail" :"email *",
       "contactMessage" :"message *",
@@ -637,9 +261,4 @@ function keepLanguage2() {
       "menuAwards":"certifs",
       "menuContact":"contact"
     }
-  };
-  // WOW active
-  new WOW().init();
-}
-
-)(jQuery);
+  }
