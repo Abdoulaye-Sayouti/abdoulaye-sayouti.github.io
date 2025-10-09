@@ -404,7 +404,7 @@ function keepLanguage2() {
 
       "resumeExperienceTitle": "Experience",
       "resumeExperience1.1": "R&D Artificial Intelligence Engineer",
-      "resumeExperience1.2": "10.2022 - Present",
+      "resumeExperience1.2": "07.2025 - Present",
       "resumeExperience1.3": "Aix-en-Provence - France.",
       "resumeExperience2.1": "R&D Artificial Intelligence Engineer",
       "resumeExperience2.2": "Enedis AI Lab,",
