@@ -408,7 +408,7 @@ function keepLanguage2() {
       "resumeExperience1.3": "Aix-en-Provence - France.",
       "resumeExperience2.1": "R&D Artificial Intelligence Engineer",
       "resumeExperience2.2": "Enedis AI Lab,",
-      "resumeExperience2.3": "Marseille - France.",
+      "resumeExperience2.3": "Montpellier - France.",
       "resumeExperience3.1": "Data Analyst Intern",
       "resumeExperience3.2": "Infineon Technologies,",
       "resumeExperience3.3": "Padova - Italy.",
@@ -488,7 +488,7 @@ function keepLanguage2() {
       "contactSubmit" :"submit",
       
       
-      "infoTitle":"R&D Artificial Intelligence Engineer",
+      "infoTitle":"AI Team Lead @ Understand Tech",
       "infoPhone": "Phone",
       "infoLocation":"Location",
       "infoDownloadCV":"download CV EN",
@@ -534,12 +534,12 @@ function keepLanguage2() {
       "resumeEducation5.3": "Gabès - Tunisie.",
 
       "resumeExperienceTitle": "Expérience",
-      "resumeExperience1.1": "Ingénieur R&D en Intelligence Artificielle",
+      "resumeExperience1.1": "R&D Artificial Intelligence Engineer",
       "resumeExperience1.2": "10.2022 - Présent",
       "resumeExperience1.3": "Aix-en-Provence - France.",
-      "resumeExperience2.1": "Ingénieur R&D en Intelligence Artificielle",
+      "resumeExperience2.1": "R&D Artificial Intelligence Engineer",
       "resumeExperience2.2": "Laboratoire IA d'Enedis,",
-      "resumeExperience2.3": "Marseille - France.",
+      "resumeExperience2.3": "Montpellier - France.",
       "resumeExperience3.1": "Stagiaire Analyste de Données",
       "resumeExperience3.2": "Infineon Technologies,",
       "resumeExperience3.3": "Padova - Italie.",
@@ -590,9 +590,9 @@ function keepLanguage2() {
       "portfolioInf1": "Business Intelligence (BI), Stage",
       "portfolioInf2": "Analyste de Données",
       "portfolioEne1": "Alternance",
-      "portfolioEne2": "Ingénieur R&D en Intelligence Artificielle",
+      "portfolioEne2": "R&D Artificial Intelligence Engineer",
       "portfolioAiway1": "CDI",
-      "portfolioAiway2": "Ingénieur R&D en Intelligence Artificielle",
+      "portfolioAiway2": "R&D Artificial Intelligence Engineer",
       "portfolioQRCode1" : "Application Web, UX/UI",
       "portfolioQRCode2" : " Générateur de QR Code ",
 
@@ -619,7 +619,7 @@ function keepLanguage2() {
       "contactSubmit" :"envoyer",
       
       
-      "infoTitle":"Ingénieur R&D en Intelligence Artificielle",
+      "infoTitle":"R&D Artificial Intelligence Engineer",
       "infoPhone": "Téléphone",
       "infoLocation":"Adresse",
       "infoDownloadCV":"Télécharger CV FR",

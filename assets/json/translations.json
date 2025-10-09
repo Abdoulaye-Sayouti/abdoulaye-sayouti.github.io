@@ -34,7 +34,7 @@
 
       "resumeExperienceTitle": "Experience",
       "resumeExperience1.1": "R&D Artificial Intelligence Engineer",
-      "resumeExperience1.2": "10.2022 - Present",
+      "resumeExperience1.2": "07.2025 - Present",
       "resumeExperience1.3": "Aix-en-Provence - France.",
       "resumeExperience2.1": "R&D Artificial Intelligence Engineer",
       "resumeExperience2.2": "Enedis AI Lab,",
@@ -45,6 +45,8 @@
       "resumeExperience4.1": "Data Scientist Intern",
       "resumeExperience4.2": "SFM Technologies,",
       "resumeExperience4.3": " Tunis - Tunisia.",
+      "resumeExperience5.1": "AI Team Lead",
+      "resumeExperience5.2": "Understand Tech,",
 
       "resumeSkillsTitle": "Technical Skills",
       "resumeSkills1": "Mathematics | Algorithms",
@@ -103,8 +105,9 @@
       "worksAdd": "<p>The JavaFX Address Book App is a user-friendly and efficient desktop application designed to help users manage their contact information seamlessly. This application leverages the power of JavaFX to provide an intuitive and visually appealing user interface for organizing and maintaining personal or professional contact lists. </p> <p> The project was developed using the following tools: <ol> <li>IDE: Netbeans (version 8.2)</li> <li>Framework: JavaFX</li> </ol> </p>",
       "worksTSP": "<p>The TSP Visualization App is a JavaFX desktop application designed to help children understand the Traveling Salesman Problem (TSP) through interactive visualization. This app developpement is dedicated to science education for young audiences. </p> <p> The Traveling Salesman Problem is a classic optimization problem where the goal is to find the shortest path that visits a set of given points. </p> <p>The project follows the Model-View-Controller (MVC) architectural pattern: <ol> <li>Model: Provides the necessary functionality for the graphical interface and represents the .jar file.</li> <li>View: Consists of FXML files that organize and structure the interface components.</li> <li>Controller: Manages view changes and user interactions, with multiple Java classes handling communication between the view and the model.</li> </ol> </p> <p> The project was developed using the following tools: <ol> <li>IDE: Netbeans (version 8.2)</li> <li>Framework: JavaFX</li> <li>Graph Library: Graph Stream (JavaFX 2.0)</li> </ol> </p>",
       "worksAfro": '<p>Afro Fashion Stable Diffusion is an AI model explicitly designed for African fashion. As part of our Inclusive Fashion AI (InFashAI) initiative, we aim to create datasets and AI models that better represent the diversity of the fashion universe. Using almost 100,000 images with their titles and descriptions from the African fashion sales platform <strong> <a href="https://www.afrikrea.com/en" target="_blank">Afrikrea</a> </strong>, we fine-tuned the Stable Diffusion model v1.4. The resulting model generates more relevant African fashion items as it accounts better for African fashion features. Our model is capable of generating improved images of African fashion. </p> <p>We hope this technology will help stylists, designers, and others in their creation and designing process. We are committed to creating more diverse and inclusive AI technologies.</p>',
+      "worksRAG": "<p>This award-winning Retrieval-Augmented Generation (RAG) system secured 1st place in the Secure RAG Challenge by UnderstandTech, demonstrating excellence in building secure, offline AI solutions with emphasis on data privacy and open-source technologies. I architected a sophisticated multi-stage pipeline that combines advanced document processing, hybrid retrieval mechanisms, and optimized language model integration. The system leverages Docling for superior PDF-to-Markdown conversion, implements a dual encoding strategy using Nomic Embed for semantic understanding and BM25 with TF-IDF for keyword matching, and utilizes FAISS vector database alongside a BGE Reranker to ensure highly relevant results. Through Llamafile integration, I achieved flexible CPU/GPU performance optimization, enabling efficient inference while maintaining resource control—all tested and optimized on hardware configurations with 32GB RAM and 8GB VRAM. I designed the system to handle diverse content types seamlessly, supporting text documents (Markdown, PDF, CSV, HTML), multiple programming languages (Python, JavaScript, Java, C++, Go, Rust, and more), and technical documentation with intelligent parsing that preserves header hierarchies and metadata. Key technical achievements include implementing an advanced caching system for optimized performance, GPU-accelerated embeddings with automatic memory management, thread-safe LLM operations, and a configurable processing pipeline with comprehensive logging and progress tracking. The solution features a user-friendly Streamlit web interface and emphasizes practical deployment considerations, making it suitable for production environments requiring secure, offline RAG capabilities with minimal computational overhead.</p>",
       "worksRasa": "<p>The project was developed with two of my classmates. The aim of this project is to set up a human-robot dialogue interface (vocal and visual) using the capabilities of programmable humanoid robots: NAO and Pepper from SoftBank Robotics. The final solution is a developed chatbot using the RASA open-source framework and machine learning algorithms. The chatbot is then interfaced with the two robots to act as a welcome agent at the Center for Education and Research in Computer Science (CERI). The bots have two main functionalities: <ol> <li>Consult students timetable and check availability.</li> <li>As well as four secondary social functions: tell jokes, consult the weather, search in a wiki and play some quiz. </li> </ol> </p> <p> The project was developed using the following tools: <ol> <li>Python, HTML, CSS</li> <li>Rasa Open Source</li> <li>Choregraphe Suite</li> <li>Robots : Pepper and NAO</li> <li>Google Clood Speech API</li> <li>REST-API</li> </ol> </p>",
-      "worksRole": "R&D Artificial Intelligence Engineer",
+      "worksRole": "AI Team Lead @ Understand Tech",
       "worksPersonal": "Personal",
       "worksSchoolProject": "School Project",
       "worksPersonalProject":  "Personal Project",
@@ -118,7 +121,7 @@
       "contactSubmit" :"submit",
       
       
-      "infoTitle":"R&D Artificial Intelligence Engineer",
+      "infoTitle":"AI Team Lead @ Understand Tech",
       "infoPhone": "Phone",
       "infoLocation":"Location",
       "infoDownloadCV":"download CV EN",
@@ -164,10 +167,10 @@
       "resumeEducation5.3": "Gabès - Tunisie.",
 
       "resumeExperienceTitle": "Expérience",
-      "resumeExperience1.1": "Ingénieur R&D en Intelligence Artificielle",
-      "resumeExperience1.2": "10.2022 - Présent",
+      "resumeExperience1.1": "Ingénieur R&D En Intelligence Artificielle",
+      "resumeExperience1.2": "07.2025 - Présent",
       "resumeExperience1.3": "Aix-en-Provence - France.",
-      "resumeExperience2.1": "Ingénieur R&D en Intelligence Artificielle",
+      "resumeExperience2.1": "Ingénieur R&D En Intelligence Artificielle",
       "resumeExperience2.2": "Laboratoire IA d'Enedis,",
       "resumeExperience2.3": "Marseille - France.",
       "resumeExperience3.1": "Stagiaire Analyste de Données",
@@ -176,6 +179,8 @@
       "resumeExperience4.1": "Stagiaire Data Scientist",
       "resumeExperience4.2": "SFM Technologies,",
       "resumeExperience4.3": "Tunis - Tunisie.",
+      "resumeExperience5.1": "AI Team Lead",
+      "resumeExperience5.2": "Understand Tech,",
 
       "resumeSkillsTitle": "Compétences",
       "resumeSkills1": "Mathématiques | Algorithmes",
@@ -220,9 +225,9 @@
       "portfolioInf1": "Business Intelligence (BI), Stage",
       "portfolioInf2": "Analyste de Données",
       "portfolioEne1": "Alternance",
-      "portfolioEne2": "Ingénieur R&D en Intelligence Artificielle",
+      "portfolioEne2": "Ingénieur R&D En Intelligence Artificielle",
       "portfolioAiway1": "CDI",
-      "portfolioAiway2": "Ingénieur R&D en Intelligence Artificielle",
+      "portfolioAiway2": "Ingénieur R&D En Intelligence Artificielle",
       "portfolioQRCode1" : "Application Web, UX/UI",
       "portfolioQRCode2" : " Générateur de QR Code ",
 
@@ -234,6 +239,7 @@
       "worksAdd": "<p>L'application JavaFX Carnet d'adresses est une application de bureau conviviale et efficace conçue pour aider les utilisateurs à gérer leurs informations de contact de manière transparente. Cette application exploite la puissance de JavaFX pour fournir une interface utilisateur intuitive et visuellement attrayante pour organiser et maintenir des listes de contacts personnels ou professionnels.</p> <p>Le projet a été développé en utilisant les outils suivants : <ol> <li>IDE : Netbeans (version 8.2)</li> <li>Framework : JavaFX</li> </ol> </p>",
       "worksTSP": "<p>L'application de visualisation du Problème du Voyageur de Commerce (TSP) est une application de bureau JavaFX conçue pour aider les enfants à comprendre le Problème du Voyageur de Commerce (TSP) grâce à une visualisation interactive. Le développement de cette application est dédié à l'éducation scientifique pour un jeune public.</p> <p>Le Problème du Voyageur de Commerce est un problème d'optimisation classique où l'objectif est de trouver le chemin le plus court qui visite un ensemble de points donnés.</p> <p>Le projet suit le modèle architectural Modèle-Vue-Contrôleur (MVC) : <ol> <li>Modèle : Fournit les fonctionnalités nécessaires pour l'interface graphique et représente le fichier .jar.</li> <li>Vue : Comprend des fichiers FXML qui organisent et structurent les composants de l'interface.</li> <li>Contrôleur : Gère les changements de vue et les interactions avec l'utilisateur, avec plusieurs classes Java gérant la communication entre la vue et le modèle.</li> </ol> </p> <p>Le projet a été développé en utilisant les outils suivants : <ol> <li>IDE : Netbeans (version 8.2)</li> <li>Framework : JavaFX</li> <li>Bibliothèque de graphes : Graph Stream (JavaFX 2.0)</li> </ol> </p>",
       "worksAfro": "<p>Afro Fashion Stable Diffusion est un modèle d'IA spécifiquement conçu pour la mode africaine. Dans le cadre de notre initiative Inclusive Fashion AI (InFashAI), nous visons à créer des ensembles de données et des modèles d'IA qui représentent mieux la diversité de l'univers de la mode. En utilisant près de 100 000 images avec leurs titres et descriptions provenant de la plateforme de vente de mode africaine <strong>Afrikrea</strong>, nous avons affiné le modèle Stable Diffusion v1.4. Le modèle résultant génère des articles de mode africaine plus pertinents, car il prend mieux en compte les caractéristiques de la mode africaine. Notre modèle est capable de générer des images améliorées de la mode africaine.</p> <p>Nous espérons que cette technologie aidera les stylistes, les designers et d'autres acteurs de la création dans leur processus de conception. Nous nous engageons à créer des technologies d'IA plus diverses et inclusives.</p>",
+      "worksRAG":"<p>Ce système de génération augmentée par récupération (RAG) primé a remporté la 1ère place du Secure RAG Challenge organisé par UnderstandTech, démontrant l'excellence dans la construction de solutions d'IA sécurisées et hors ligne avec un accent sur la confidentialité des données et les technologies open source. J'ai conçu un pipeline sophistiqué en plusieurs étapes qui combine un traitement avancé de documents, des mécanismes de récupération hybrides et une intégration optimisée de modèles de langage. Le système exploite Docling pour une conversion PDF-vers-Markdown de qualité supérieure, implémente une stratégie de double encodage utilisant Nomic Embed pour la compréhension sémantique et BM25 avec TF-IDF pour la correspondance de mots-clés, et utilise une base de données vectorielle FAISS ainsi qu'un BGE Reranker pour garantir des résultats très pertinents. Grâce à l'intégration de Llamafile, j'ai obtenu une optimisation flexible des performances CPU/GPU, permettant une inférence efficace tout en maintenant le contrôle des ressources—le tout testé et optimisé sur des configurations matérielles avec 32 Go de RAM et 8 Go de VRAM. J'ai conçu le système pour gérer de manière transparente divers types de contenu, prenant en charge les documents texte (Markdown, PDF, CSV, HTML), plusieurs langages de programmation (Python, JavaScript, Java, C++, Go, Rust, et plus encore), et la documentation technique avec une analyse intelligente qui préserve les hiérarchies d'en-têtes et les métadonnées. Les principales réalisations techniques incluent la mise en œuvre d'un système de cache avancé pour des performances optimisées, des embeddings accélérés par GPU avec gestion automatique de la mémoire, des opérations LLM thread-safe, et un pipeline de traitement configurable avec journalisation complète et suivi de la progression. La solution dispose d'une interface web Streamlit conviviale et met l'accent sur les considérations de déploiement pratiques, la rendant adaptée aux environnements de production nécessitant des capacités RAG sécurisées et hors ligne avec une surcharge computationnelle minimale.</p>",
       "worksRasa": "<p>Le projet a été développé avec deux de mes camarades de classe. L'objectif de ce projet est de mettre en place une interface de dialogue homme-robot (vocale et visuelle) en utilisant les capacités de robots humanoïdes programmables. Les robots humanoïdes programmables utilisés sont NAO et Pepper de SoftBank Robotics. La solution finale est un chatbot développé à l'aide du framework open source RASA et d'algorithmes d'apprentissage automatique. Le chatbot est ensuite interfacé avec les deux robots pour agir en tant qu'agent d'accueil au Centre d'Enseignement et de Recherche en Informatique (CERI). Les robots ont deux fonctionnalités principales : <ol> <li>Consulter l'emploi du temps des étudiants et vérifier des disponibilités.</li> <li>Ainsi que quatre fonctions sociales secondaires : raconter des blagues, consulter la météo, effectuer des recherches dans une encyclopédie en ligne et jouer à des quiz.</li> </ol> </p> <p> Le projet a été développé en utilisant les outils suivants : <ol> <li>Python, HTML, CSS</li> <li>Rasa Open Source</li> <li>Choregraphe Suite </li> <li>Robots : Pepper et NAO</li> <li>Google Cloud Speech API</li> <li>REST-API</li> </ol> </p>",
       "worksRole": "Ingénieur R&D en IA",
       "worksPersonal": "Personnel",
@@ -249,7 +255,7 @@
       "contactSubmit" :"envoyer",
       
       
-      "infoTitle":"Ingénieur R&D en Intelligence Artificielle",
+      "infoTitle":"AI Team Lead @ Understand Tech",
       "infoPhone": "Téléphone",
       "infoLocation":"Adresse",
       "infoDownloadCV":"Télécharger CV FR",
